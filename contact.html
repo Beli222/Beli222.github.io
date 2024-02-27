@@ -3,45 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <!-- Link your CSS stylesheet -->
-
-    <link rel="stylesheet" href="styles.css">
-    
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS stylesheet -->
+   
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Contact Me</h1>
+            <h1>My Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="work-experience.html">Work Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <!-- Add your contact form or contact information here -->
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:belibrnrd@gmail.com</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Number: +37065026114:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Send">
+    <section id="contact-content" class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> belibrnrd@gmail.com</li>
+                <li><strong>Phone:</strong> +37065026114</li>
+                <li><strong>Address:</strong> Kretingos gatve 36, Klaipeda, Lithuania</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 
-    <!-- Link your JavaScript file -->
-    <script src="script.js"></script>
+   
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Link your JavaScript file -->
 </body>
 </html>
+
